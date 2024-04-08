@@ -67,3 +67,7 @@ body {
 .yellow {
   background-color: yellow;
 }
+
+.active {
+  opacity: 0.7;
+}
