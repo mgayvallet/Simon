@@ -1,16 +1,15 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-   display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh; 
-  
 }
 
 .playground {
@@ -18,22 +17,12 @@ body {
   flex-direction: column;
 }
 
-.above-section {
+.above-section, .bottom-section {
   display: flex;
   flex-direction: row;
 }
 
-.bottom-section {
-  display: flex;
-  flex-direction: row;
-}
-
-
-
-.red,
-.green,
-.blue,
-.yellow {
+.red, .green, .blue, .yellow {
   width: 150px;
   height: 150px;
   margin: 10px;
@@ -42,14 +31,13 @@ body {
   border-radius: 15px;
 }
 
-.red:hover,
-.green:hover,
-.blue:hover,
-.yellow:hover {
-  border-radius: 15px;
-  transform: scale(1.1);
-  -webkit-box-shadow: 4px 4px 15px 5px rgba(0,0,0,0.75); 
-  box-shadow: 4px 4px 15px 5px rgba(0,0,0,0.75);
+/* Hover effects for non-mobile screens */
+@media (hover: hover) and (pointer: fine) {
+  .red:hover, .green:hover, .blue:hover, .yellow:hover {
+    border-radius: 15px;
+    transform: scale(1.1);
+    box-shadow: 4px 4px 15px 5px rgba(0,0,0,0.75);
+  }
 }
 
 .red {  
