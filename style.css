@@ -32,7 +32,7 @@ body {
 }
 
 /* Hover effects for non-mobile screens */
-@media (hover: hover) and (pointer: fine) {
+@media (min-width: 600px) {
   .red:hover, .green:hover, .blue:hover, .yellow:hover {
     border-radius: 15px;
     transform: scale(1.1);
